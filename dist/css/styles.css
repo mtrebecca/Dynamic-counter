@@ -87,6 +87,11 @@
     border-top-right-radius: 0;
   }
 }
+@media (max-width: 415px) {
+  .tab {
+    font-size: 12px;
+  }
+}
 body {
   background-color: #02010E;
   display: flex;
