@@ -1,0 +1,23 @@
+@import '../utils/variables';
+
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: $color-text-toast;
+    color: $color-text-white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    right: 20px;
+    font-size: 17px;
+    opacity: 0;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+}
