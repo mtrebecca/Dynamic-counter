@@ -10,48 +10,69 @@
     <link rel="stylesheet" href="./dist/css/styles.css" />
   </head>
   <body>
-    <div id="toast" class="toast"></div>
-    <div class="container">
+    <div id="toast" class="toast" aria-live="polite"></div>
+    <main>
       <h1>Meus objetivos de vida</h1>
-      <div class="tabs">
-        <div
+      <div class="tabs" role="tablist">
+        <button
           class="tab active"
           data-tab="tab1"
-          data-deadline="2024-11-03T13:30:00">
+          data-deadline="2024-11-03T13:30:00"
+          role="tab"
+          aria-selected="true"
+          aria-controls="tab1">
           🧑‍🎓 Estudar todo o conteúdo de português do ENEM
-        </div>
-        <div class="tab" data-tab="tab2" data-deadline="2024-08-21T08:00:00">
+        </button>
+        <button
+          class="tab"
+          data-tab="tab2"
+          data-deadline="2024-08-21T08:00:00"
+          role="tab"
+          aria-selected="false"
+          aria-controls="tab2">
           🤖 Participar da IA Conference 2024
-        </div>
-        <div class="tab" data-tab="tab3" data-deadline="2024-09-09T10:00:00">
+        </button>
+        <button
+          class="tab"
+          data-tab="tab3"
+          data-deadline="2024-09-09T10:00:00"
+          role="tab"
+          aria-selected="false"
+          aria-controls="tab3">
           🖱️ Entrevista na Alura
-        </div>
-        <div class="tab" data-tab="tab4" data-deadline="2024-10-15T14:00:00">
+        </button>
+        <button
+          class="tab"
+          data-tab="tab4"
+          data-deadline="2024-10-15T14:00:00"
+          role="tab"
+          aria-selected="false"
+          aria-controls="tab4">
           📚 Prova de Matemática
-        </div>
+        </button>
       </div>
 
-      <div id="tab1" class="tab-content active">
-        <h3>🧑‍🎓 Estudar todo o conteúdo de português do ENEM</h3>
+      <section id="tab1" class="tab-content active" role="tabpanel" aria-labelledby="tab1">
+        <h2>🧑‍🎓 Estudar todo o conteúdo de português do ENEM</h2>
         <div class="object-time">Tempo para completar o objetivo</div>
         <div class="timer-container"></div>
-      </div>
-      <div id="tab2" class="tab-content">
-        <h3>🤖 Participar da IA Conference 2024</h3>
+      </section>
+      <section id="tab2" class="tab-content" role="tabpanel" aria-labelledby="tab2">
+        <h2>🤖 Participar da IA Conference 2024</h2>
         <div class="object-time">Tempo para completar o objetivo</div>
         <div class="timer-container"></div>
-      </div>
-      <div id="tab3" class="tab-content">
-        <h3>🖱️ Entrevista na Alura</h3>
+      </section>
+      <section id="tab3" class="tab-content" role="tabpanel" aria-labelledby="tab3">
+        <h2>🖱️ Entrevista na Alura</h2>
         <div class="object-time">Tempo para completar o objetivo</div>
         <div class="timer-container"></div>
-      </div>
-      <div id="tab4" class="tab-content">
-        <h3>📚 Prova de Matemática</h3>
+      </section>
+      <section id="tab4" class="tab-content" role="tabpanel" aria-labelledby="tab4">
+        <h2>📚 Prova de Matemática</h2>
         <div class="object-time">Tempo para completar o objetivo</div>
         <div class="timer-container"></div>
-      </div>
-    </div>
+      </section>
+    </main>
     <script src="./src/js/script.js"></script>
   </body>
 </html>
