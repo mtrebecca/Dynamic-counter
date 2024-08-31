@@ -1,0 +1,42 @@
+.object-time {
+    font-size: 20px;
+    font-weight: 700;
+    color: $color-text-primary;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.timer {
+    font-size: 36px;
+    color: $color-text-primary;
+    margin-top: 10px;
+    gap: 14px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .time-unit {
+        display: flex;
+        flex-direction: column;
+        color: $color-text-white;
+
+        .value {
+            font-size: 128px;
+        }
+
+        .label {
+            font-size: 32px;
+            font-weight: $font-weight-normal;
+            color: $color-text-primary;
+        }
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+            .value::after {
+                content: ':';
+                margin-left: 8px;
+            }
+        }
+    }
+}
