@@ -34,4 +34,4 @@ Este é um aplicativo web simples que permite ao usuário definir e acompanhar o
 
 4. Acessar o Projeto
 
-`http://localhost:3000` ou ``
+`http://localhost:3000` ou `https://mtrebecca.github.io/Dynamic-counter/`
